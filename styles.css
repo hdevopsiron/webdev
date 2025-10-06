@@ -4,3 +4,9 @@ body {
   padding: 2rem;
   background: #f6f8fa;
 }
+header {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 2rem;
+  background: #f6f8fa;
