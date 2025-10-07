@@ -36,3 +36,20 @@ body {
   padding: 2rem;
   background: #f6f8fa;
 }
+
+[data-theme="dark"] {
+  background: #181825;
+  color: #f6f8fa;
+}
+
+[data-theme="dark"] header {
+  background: #1a1a2e;
+}
+
+[data-theme="dark"] .navbar a {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .navbar a:hover {
+  color: #c9ada7;
+}

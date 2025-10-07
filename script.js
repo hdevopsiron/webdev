@@ -1,11 +1,10 @@
+
 console.log("JS is connected! 🚀");
-document.addEventListener('click', () => {
-  const body = document.body;
-  const currentTheme = body.getAttribute('data-theme');
-  
-  if (currentTheme === 'dark') {
-    body.setAttribute('data-theme', 'light');
-  } else {
-    body.setAttribute('data-theme', 'dark');
-  }
+
+// Toggle data-theme on <body> when anywhere is clicked
+document.body.addEventListener('click', function (e) {
+	// Ignore clicks on links in the navbar
+	if (e.target.closest('.navbar a')) return;
+	const current = document.body.getAttribute('data-theme');
+	document.body.setAttribute('data-theme', current === 'dark' ? '' : 'dark');
 });
