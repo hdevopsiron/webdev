@@ -1,6 +1,8 @@
+/* v1.1.0 - Improved colour palette and contrast */
 header {
   background: #22223b;
   padding: 0;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
 }
 
 .navbar {
@@ -20,36 +22,46 @@ header {
 }
 
 .navbar a {
-  color: #f6f8fa;
+  color: #f8f9fa;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.2s;
+  letter-spacing: 0.02em;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.25em 0.75em;
+  border-radius: 4px;
 }
 
 .navbar a:hover {
-  color: #9a8c98;
+  color: #22223b;
+  background: #c9ada7;
 }
+
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 2rem;
   background: #f6f8fa;
+  color: #22223b;
+  transition: background 0.3s, color 0.3s;
 }
 
 [data-theme="dark"] {
   background: #181825;
-  color: #f6f8fa;
+  color: #f8f9fa;
 }
 
 [data-theme="dark"] header {
-  background: #1a1a2e;
+  background: #232946;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.12);
 }
 
 [data-theme="dark"] .navbar a {
   color: #e0e0e0;
+  background: transparent;
 }
 
 [data-theme="dark"] .navbar a:hover {
-  color: #c9ada7;
+  color: #232946;
+  background: #c9ada7;
 }
