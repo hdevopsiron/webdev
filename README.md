@@ -1,4 +1,3 @@
-
 ---
 
 ## 🚀 Live Preview
@@ -15,8 +14,9 @@ Click anywhere on the page (except navigation links) to toggle between light and
 
 ## 🔧 Setup Instructions
 
-### 1. Clone the Repository
+1. Clone the Repository:
 
-```bash
-git clone <your-repo-url>
-cd web-lab
+   ```bash
+   git clone <your-repo-url>
+   cd web-lab
+   ```
